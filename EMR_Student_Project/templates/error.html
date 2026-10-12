@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Error {{ code }} | CareTrack EMR{% endblock %}{% block content %}<section class="panel error"><div>{{ code }}</div><h1>Something needs attention</h1><p>{{ message }}</p><a class="btn" href="{{ url_for('dashboard') if session.get('user_id') else url_for('home') }}">Return</a></section>{% endblock %}

@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.py[cod]
+emr.db
+.env
+.pytest_cache/
